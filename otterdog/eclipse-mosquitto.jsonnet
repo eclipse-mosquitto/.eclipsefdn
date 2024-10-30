@@ -10,6 +10,11 @@ orgs.newOrg('eclipse-mosquitto') {
       default_workflow_permissions: "write",
     },
   },
+  secrets+: [
+    orgs.newOrgSecret('CODECOV_TOKEN') {
+      value: "pass:bots/iot.mosquitto/codecov.io/codecov-token",
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('mosquitto') {
       allow_merge_commit: true,
