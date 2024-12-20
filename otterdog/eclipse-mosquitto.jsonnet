@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-mosquitto') {
+orgs.newOrg('iot.mosquitto', 'eclipse-mosquitto') {
   settings+: {
     description: "",
     name: "Eclipse Mosquitto",
