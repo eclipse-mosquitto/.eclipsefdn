@@ -28,7 +28,6 @@ orgs.newOrg('iot.mosquitto', 'eclipse-mosquitto') {
       topics+: [
         "broker",
         "eclipse-iot",
-        "libwebsockets",
         "mosquitto",
         "mqtt"
       ],
