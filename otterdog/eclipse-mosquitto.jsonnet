@@ -28,8 +28,13 @@ orgs.newOrg('iot.mosquitto', 'eclipse-mosquitto') {
       topics+: [
         "broker",
         "eclipse-iot",
+        "iot",
+        "messaging",
         "mosquitto",
-        "mqtt"
+        "mqtt",
+        "mqtt-broker",
+        "mqtt-client",
+        "mqtt-server"
       ],
       web_commit_signoff_required: false,
       workflows+: {
